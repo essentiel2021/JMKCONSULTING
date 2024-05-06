@@ -37,12 +37,11 @@
 
 
 <!-- page wrapper -->
-
 <body>
 
     <div class="boxed_wrapper">
 
-        <!-- Main Content -->
+
         <!-- preloader -->
         <div class="loader-wrap">
             <div class="preloader">
@@ -107,7 +106,7 @@
                                 y
                             </span>
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
@@ -118,19 +117,16 @@
         <div id="search-popup" class="search-popup">
             <div class="popup-inner">
                 <div class="upper-box clearfix">
-                    <figure class="logo-box pull-left">
-                        <a href="index_1.html"><img src="{{asset('assets/img/logo.png')}}" alt=""></a>
-                    </figure>
+                    <figure class="logo-box pull-left"><a href="index_1.html"><img src="{{asset('assets/img/logo.png')}}" alt=""></a></figure>
                     <div class="close-search pull-right"><i class="fa-solid fa-xmark"></i></div>
                 </div>
                 <div class="overlay-layer"></div>
                 <div class="auto-container">
                     <div class="search-form">
-                        <form method="post" action="#">
+                        <form method="post" action="index.html">
                             <div class="form-group">
                                 <fieldset>
-                                    <input type="search" class="form-control" name="search-input" value=""
-                                        placeholder="Type your keyword and hit" required="">
+                                    <input type="search" class="form-control" name="search-input" value="" placeholder="Type your keyword and hit" required="">
                                     <button type="submit"><i class="flaticon-loupe"></i></button>
                                 </fieldset>
                             </div>
@@ -157,13 +153,11 @@
                         <div class="sidebar-info-contents">
                             <div class="content-inner">
                                 <div class="logo">
-                                    <a href="#"><img src="{{asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png')}}"
-                                            alt=""></a>
+                                    <a href="index.html"><img src="{{asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png')}}" alt=""></a>
                                 </div>
                                 <div class="content-box">
                                     <h4>A PROPOS</h4>
-                                    <p>Créateur de compétences, d’innovation et d’opportunités. Nous vous accompagnons
-                                        dans votre développement stratégique au quotidien.</p>
+                                    <p>Créateur de compétences, d’innovation et d’opportunités. Nous vous accompagnons dans votre développement stratégique au quotidien.</p>
                                     <br>
                                     <a href="a-propos.html" class="theme-btn btn-two">Lire plus</a>
                                 </div>
@@ -172,8 +166,7 @@
                                     <ul>
                                         <li>Abidjan - Cocody Angré 8eme Tranche <br>(Carrefour prière)</li>
                                         <li><a href="tel:+2250709095378">+225 0709095378</a></li>
-                                        <li><a href="mailto:infos@jmkconsulting-ci.com">infos@jmkconsulting-ci.com</a>
-                                        </li>
+                                        <li><a href="mailto:infos@jmkconsulting-ci.com">infos@jmkconsulting-ci.com</a></li>
                                     </ul>
                                 </div>
                                 <ul class="social-box clearfix">
@@ -198,7 +191,7 @@
                 <div class="outer-container">
                     <ul class="info-list clearfix">
                         <li><span class="ttm-textcolor-skincolor" style="color: white;"><i class="fa fa-map"></i>
-                                Abidjan - Cocody Angré 8eme Tranche (Carrefour prière)</span></li>
+                            Abidjan - Cocody Angré 8eme Tranche (Carrefour prière)</span></li>
                         <!-- <li><a href="contacts.html">Contacts</a></li> -->
                     </ul>
                     <ul class="social-links clearfix">
@@ -216,11 +209,9 @@
             <div class="header-upper">
                 <div class="outer-container">
                     <div class="left-column">
-                        <figure class="logo-box">
-                            <a href="*/"><img src="{{asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png')}}" alt=""></a>
-                        </figure>
+                        <figure class="logo-box"><a href="*/"><img src="{{asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png')}}" alt=""></a></figure>
                         <div class="award-box">
-                            <!-- <div class="award-image"><img src="img/award-1.png" alt=""></div> -->
+                            <!-- <div class="award-image"><img src="{{asset('assets/img/award-1.png')}}" alt=""></div> -->
                             <!-- <h5>Leading providers of investment <br>advisory solutions.</h5> -->
                         </div>
                     </div>
@@ -229,11 +220,8 @@
                             <div class="icon-box"><i class="flaticon-headphone"></i></div>
                             <!-- <h5><a href="faq.html">FAQ</a></h5> -->
                         </div>
-                        <div class="phone">
-                            <h3><a href="tel:+2250709095378">+225 0709095378</a></h3>
-                        </div>
-                        <div class="btn-box"><a href="contact.html" class="theme-btn btn-one">Contactez-nous</a>
-                        </div>
+                        <div class="phone"><h3><a href="tel:+2250709095378">+225 0709095378</a></h3></div>
+                        <div class="btn-box"><a href="contact.html" class="theme-btn btn-one">Contactez-nous</a></div>
                     </div>
                 </div>
             </div>
@@ -249,63 +237,51 @@
                                 <i class="icon-bar"></i>
                             </div>
                             <nav class="main-menu navbar-expand-md navbar-light">
-
-                                <div class="collapse navbar-collapse show clearfix"
-                                    style="display: flex!important; flex-direction: row;" id="navbarSupportedContent">
-
+                                
+                                <div class="collapse navbar-collapse show clearfix" style="display: flex!important; flex-direction: row;" id="navbarSupportedContent">
+                                    
                                     <ul class="navigation clearfix">
-                                        <li class="current"><a href="">Accueil</a>
+                                        <li class="current"><a href="index.html">Accueil</a>
                                         </li>
                                         <li class="dropdown"><a href="#">A Propos</a>
                                             <ul>
-                                                <li><a href="#">Présentation</a></li>
-                                                <li><a href="#">Notre équipe</a></li>
-                                                <li><a href="#">Notre approche</a></li>
+                                                <li><a href="presentation.html">Présentation</a></li>
+                                                <li><a href="equipe.html">Notre équipe</a></li>
+                                                <li><a href="approche.html">Notre approche</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown"><a href="#">Services</a>
                                             <ul>
-                                                <li><a href="#">Négoce de matière
-                                                        première</a></li>
+                                                <li><a href="services-detail-agriculture.html">Négoce de matière première</a></li>
                                                 <li class="dropdown"><a href="#">Environnement & foresterie</a>
                                                     <ul>
-                                                        <li><a href="#">Changement climatique
-                                                                & biodiversité</a>
+                                                        <li><a href="changement_climatique.html">Changement climatique & biodiversité</a>
                                                         </li>
-                                                        <li><a href="#">Aménagement forestier
-                                                                & du territoire</a>
+                                                        <li><a href="amenagement_forestier.html">Aménagement forestier & du territoire</a>
                                                         </li>
-                                                        <li><a href="#">Gestion des écosystèmes</a></li>
-                                                        <li><a href="#">Agroforesterie &
-                                                                Agroécologie</a></li>
-                                                        <li><a href="#">Diagnostics & audits</a>
-                                                        </li>
-                                                        <li><a href="#">Monitoring
-                                                                environnementaux</a>
+                                                        <li><a href="ecosysteme.html">Gestion des écosystèmes</a></li>
+                                                        <li><a href="agroforesterie.html">Agroforesterie & Agroécologie</a></li>
+                                                        <li><a href="audit_environnement.html">Diagnostics & audits</a></li>
+                                                        <li><a href="monitoring_environnement.html">Monitoring environnementaux</a>
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#">Agriculture Intelligente
-                                                        & Innovante</a></li>
-                                                <li><a href="#">Developpement des
-                                                        entreprises</a></li>
-                                                <li><a href="#">Étude et gestion de
-                                                        projets</a></li>
-                                                <li><a href="#">Bâtiment et Travaux Publics</a>
-                                                </li>
-                                                <li><a href="#">Incubation des
-                                                        organisations agricole</a></li>
-                                                <li><a href="#">Import et export</a></li>
+                                                <li><a href="services-detail-agriculture.html">Agriculture Intelligente & Innovante</a></li>
+                                                <li><a href="services-detail-entreprise.html">Developpement des entreprises</a></li>
+                                                <li><a href="services-detail-gestion_projet.html">Étude et gestion de projets</a></li>
+                                                <li><a href="service-detail-btp.html">Bâtiment et Travaux Publics</a></li>
+                                                <li><a href="service-detail-incubation.html">Incubation des organisations agricole</a></li>
+                                                <li><a href="service-detail-import.html">Import et export</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown"><a href="#">Nos produits</a>
                                             <ul>
-                                                <li><a href="#">Agro Transparence</a></li>
-                                                <li><a href="#">FieldConnect</a></li>
-                                                <li><a href="#">ONG GénieBio</a></li>
+                                                <li><a href="#agrotransparence.html">Agro Transparence</a></li>
+                                                <li><a href="#fieldconnect.html">FieldConnect</a></li>
+                                                <li><a href="#geniebio.html">ONG GénieBio</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Actualités</a></li>
+                                        <li><a href="actualites.html">Actualités</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -358,7 +334,7 @@
                                 </div>
                             </div>
                             <div class="nav-btn nav-toggler navSidebar-button clearfix">
-                                <img src="img/icon-4.png" alt="">
+                                <img src="{{asset('assets/img/icon-4.png')}}" alt="">
                             </div>
                         </div>
                     </div>
@@ -373,12 +349,8 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
 
             <nav class="menu-box">
-                <div class="nav-logo">
-                    <a href="#"><img src="{{asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png')}}" alt=""
-                            title=""></a>
-                </div>
-                <div class="menu-outer">
-                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                <div class="nav-logo"><a href="index.html"><img src="{{asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png')}}" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>
                 <div class="contact-info">
                     <h4>Contacts</h4>
@@ -397,8 +369,7 @@
                     </ul>
                 </div>
             </nav>
-        </div>
-        <!-- End Mobile Menu -->
+        </div><!-- End Mobile Menu -->
 
 
         <!-- banner-section -->
@@ -411,9 +382,34 @@
                             <h2>Showing <span>You the way</span> of Success</h2>
                             <div class="lower-box">
                                 <div class="icon-box"><i class="flaticon-conversation"></i></div>
-                                <div class="text">The moment, so blinded by desire, that they cannot foresee and
-                                    trouble that are bound to ensue.</div>
-                                <a href="#" class="theme-btn btn-two">Services &amp; Plan</a>
+                                <div class="text">The moment, so blinded by desire, that they cannot foresee and trouble that are bound to ensue.</div>
+                                <a href="index_1.html" class="theme-btn btn-two">Services &amp; Plan</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="image-layer" style="background-image:url({{asset('assets/img/banner-2.jpg')}})"></div>
+                    <div class="auto-container">
+                        <div class="content-box">
+                            <h2>Business <span>&amp; Individual</span> Consulting!..</h2>
+                            <div class="lower-box">
+                                <div class="icon-box"><i class="flaticon-conversation"></i></div>
+                                <div class="text">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled &amp; demoralized.</div>
+                                <a href="index_1.html" class="theme-btn btn-two">Services &amp; Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item">
+                    <div class="image-layer" style="background-image:url({{asset('assets/img/banner-3.jpg')}})"></div>
+                    <div class="auto-container">
+                        <div class="content-box">
+                            <h2>Ideas for <span>Your Better</span> Investment!..</h2>
+                            <div class="lower-box">
+                                <div class="icon-box"><i class="flaticon-conversation"></i></div>
+                                <div class="text">The moment, so blinded by desire, that they cannot foresee and trouble that are bound to ensue.</div>
+                                <a href="index_1.html" class="theme-btn btn-two">Services &amp; Plan</a>
                             </div>
                         </div>
                     </div>
