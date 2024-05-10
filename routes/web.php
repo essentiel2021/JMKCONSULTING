@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admincontroller;
+use App\Http\Controllers\PropoController;
 use App\Http\Controllers\SliderController;
 
 /*
@@ -19,6 +20,7 @@ use App\Http\Controllers\SliderController;
 Route::get('/admin',[Admincontroller::class,'index'])->name('admin.index');
 Route::resources([
     'sliders' => SliderController::class,
+    'propos' => PropoController::class,
 ]);
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');

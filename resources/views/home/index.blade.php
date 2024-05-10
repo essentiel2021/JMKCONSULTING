@@ -17,18 +17,20 @@
                             <div class="shape-4" style="background-image: url({{ asset('assets/img/shape-2ex.png') }});">
                             </div>
                         </div>
-                        <figure class="image"><img src="{{ asset('assets/img/jmkfile/accueil/accueil-agro.fw.png') }}"
+                        <figure class="image"><img src="{{ $propo->thumb_url }}"
                                 alt=""></figure>
                         <div class="experience-box">
                             <!-- <h2>9</h2> -->
-                            <h6>CERTIFIÉ En Agriculture</h6>
+                            <h6>{{$propo->titre2}}</h6>
                         </div>
+                        {{-- un foreach des services --}}
                         <div class="circle-box">
                             <span class="curved-circle">Environnementt</span>
                             <span class="curved-circle-2">Négoce</span>
                             <span class="curved-circle-3">Gestion d'entreprise</span>
                             <span class="curved-circle-4">Incubation</span>
                         </div>
+                        {{-- fin des services --}}
                         <div class="dot-box">
                             <span class="dot dot-1"></span>
                             <span class="dot dot-2"></span>
@@ -40,15 +42,11 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                     <div class="content-box">
                         <div class="sec-title">
-                            <span class="sub-title">JMK CONSULTING</span>
-                            <h2>Une agriculture durable</h2>
+                            <span class="sub-title">{{ env('APP_NAME') }}</span>
+                            <h2>{{$propo->titre}}</h2>
                         </div>
                         <div class="text-box">
-                            <p>Créateur de compétences, d’innovation et d’opportunités. Nous vous accompagnons dans votre
-                                développement stratégique au quotidien. Nous opérons dans les secteurs du négoce de matières
-                                premières, le conseil en développement des entreprises, le conseil en études et gestion des
-                                projets, l’incubation pour les organisations agricoles, l’import-export et le conseil en
-                                gestion comptable et financière…</p>
+                            <p>{{$propo->courte_description}}</p>
                         </div>
                         <ul class="list-item clearfix">
                             <li>Formation et encadrement</li>
@@ -56,7 +54,7 @@
                             <li>Accompagnement communautaire</li>
                         </ul>
                         <div class="btn-box">
-                            <a href="/presentation.html" class="theme-btn btn-two">En savoir plus</a>
+                            <a href="#" class="theme-btn btn-two">En savoir plus</a>
                         </div>
                     </div>
                 </div>
