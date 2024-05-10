@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admincontroller;
 use App\Http\Controllers\PropoController;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,7 @@ Route::get('/admin',[Admincontroller::class,'index'])->name('admin.index');
 Route::resources([
     'sliders' => SliderController::class,
     'propos' => PropoController::class,
+    'services' => ServiceController::class,
 ]);
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');

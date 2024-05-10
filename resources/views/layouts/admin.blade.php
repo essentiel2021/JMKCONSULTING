@@ -88,7 +88,7 @@
                             data-bs-parent="#sidebar">
                             <li class="sidebar-item active"><a class="sidebar-link" href="{{route('sliders.index')}}">Slides</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="{{route('propos.index')}}">A propos</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="#">Mes services</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="{{route('services.index')}}">Mes services</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="#">Mes Projets</a></li>
                         </ul>
                     </li>

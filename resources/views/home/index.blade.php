@@ -17,11 +17,10 @@
                             <div class="shape-4" style="background-image: url({{ asset('assets/img/shape-2ex.png') }});">
                             </div>
                         </div>
-                        <figure class="image"><img src="{{ $propo->thumb_url }}"
-                                alt=""></figure>
+                        <figure class="image"><img src="{{ $propo->thumb_url }}" alt=""></figure>
                         <div class="experience-box">
                             <!-- <h2>9</h2> -->
-                            <h6>{{$propo->titre2}}</h6>
+                            <h6>{{ $propo->titre2 }}</h6>
                         </div>
                         {{-- un foreach des services --}}
                         <div class="circle-box">
@@ -43,15 +42,16 @@
                     <div class="content-box">
                         <div class="sec-title">
                             <span class="sub-title">{{ env('APP_NAME') }}</span>
-                            <h2>{{$propo->titre}}</h2>
+                            <h2>{{ $propo->titre }}</h2>
                         </div>
                         <div class="text-box">
-                            <p>{{$propo->courte_description}}</p>
+                            <p>{{ $propo->courte_description }}</p>
                         </div>
                         <ul class="list-item clearfix">
-                            <li>Formation et encadrement</li>
-                            <li>Accompagnement de coopératives</li>
-                            <li>Accompagnement communautaire</li>
+                            @forelse ($services as $service)
+                                <li>{{ $service->titre }}</li>
+                            @empty
+                            @endforelse
                         </ul>
                         <div class="btn-box">
                             <a href="#" class="theme-btn btn-two">En savoir plus</a>
@@ -75,52 +75,23 @@
                 <h2>SERVICES AUX ORGANISATIONS AGRICOLES</h2>
             </div>
             <div class="three-item-carousel owl-carousel owl-theme owl-nav-none">
-                <div class="service-block-one block-one">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <div class="icon"><i class="flaticon-analytics"></i></div>
-                            <span class="count-text">01</span>
+                @forelse ($services as $service)
+                    <div class="service-block-one block-one">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <div class="icon"><i class="flaticon-analytics"></i></div>
+                                <span class="count-text">01</span>
+                            </div>
+                            <h3><a href="#">Private Client <br>Investment Management</a></h3>
+                            <div class="link"><a href="service-details.html"><span>Explore Service</span></a></div>
+                            <p>That they cannot foresee the pain trouble that are bound ensue equal blame belongs to duty.
+                            </p>
                         </div>
-                        <h3><a href="service-details.html">Private Client <br>Investment Management</a></h3>
-                        <div class="link"><a href="service-details.html"><span>Explore Service</span></a></div>
-                        <p>That they cannot foresee the pain trouble that are bound ensue equal blame belongs to duty.</p>
                     </div>
-                </div>
-                <div class="service-block-one block-two">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <div class="icon"><i class="flaticon-office-building"></i></div>
-                            <span class="count-text">02</span>
-                        </div>
-                        <h3><a href="service-details-7.html">Institutional <br>Investment Consulting</a></h3>
-                        <div class="link"><a href="service-details-7.html"><span>Explore Service</span></a></div>
-                        <p>Power of choice is untrammelled when nothing prevent our being all to do what we like best.</p>
-                    </div>
-                </div>
-                <div class="service-block-one block-three">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <div class="icon"><i class="flaticon-retirement"></i></div>
-                            <span class="count-text">03</span>
-                        </div>
-                        <h3><a href="service-details-13.html">Retirement Plan <br>Consulting</a></h3>
-                        <div class="link"><a href="service-details-13.html"><span>Explore Service</span></a></div>
-                        <p>Obligations of business it will occur that pleasures have to repudiaters and annoyances accepted.
-                        </p>
-                    </div>
-                </div>
-                <div class="service-block-one block-one">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <div class="icon"><i class="flaticon-analytics"></i></div>
-                            <span class="count-text">01</span>
-                        </div>
-                        <h3><a href="service-details.html">Private Client <br>Investment Management</a></h3>
-                        <div class="link"><a href="service-details.html"><span>Explore Service</span></a></div>
-                        <p>That they cannot foresee the pain trouble that are bound ensue equal blame belongs to duty.</p>
-                    </div>
-                </div>
-                <div class="service-block-one block-two">
+                @empty
+                @endforelse
+
+                {{-- <div class="service-block-one block-two">
                     <div class="inner-box">
                         <div class="icon-box">
                             <div class="icon"><i class="flaticon-office-building"></i></div>
@@ -128,55 +99,10 @@
                         </div>
                         <h3><a href="service-details-7.html">Institutional <br>Investment Consulting</a></h3>
                         <div class="link"><a href="service-details-7.html"><span>Explore Service</span></a></div>
-                        <p>Power of choice is untrammelled when nothing prevent our being all to do what we like best.</p>
-                    </div>
-                </div>
-                <div class="service-block-one block-three">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <div class="icon"><i class="flaticon-retirement"></i></div>
-                            <span class="count-text">03</span>
-                        </div>
-                        <h3><a href="service-details-13.html">Retirement Plan <br>Consulting</a></h3>
-                        <div class="link"><a href="service-details-13.html"><span>Explore Service</span></a></div>
-                        <p>Obligations of business it will occur that pleasures have to repudiaters and annoyances accepted.
+                        <p>Power of choice is untrammelled when nothing prevent our being all to do what we like best.
                         </p>
                     </div>
-                </div>
-                <div class="service-block-one block-one">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <div class="icon"><i class="flaticon-analytics"></i></div>
-                            <span class="count-text">01</span>
-                        </div>
-                        <h3><a href="service-details.html">Private Client <br>Investment Management</a></h3>
-                        <div class="link"><a href="service-details.html"><span>Explore Service</span></a></div>
-                        <p>That they cannot foresee the pain trouble that are bound ensue equal blame belongs to duty.</p>
-                    </div>
-                </div>
-                <div class="service-block-one block-two">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <div class="icon"><i class="flaticon-office-building"></i></div>
-                            <span class="count-text">02</span>
-                        </div>
-                        <h3><a href="service-details-7.html">Institutional <br>Investment Consulting</a></h3>
-                        <div class="link"><a href="service-details-7.html"><span>Explore Service</span></a></div>
-                        <p>Power of choice is untrammelled when nothing prevent our being all to do what we like best.</p>
-                    </div>
-                </div>
-                <div class="service-block-one block-three">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <div class="icon"><i class="flaticon-retirement"></i></div>
-                            <span class="count-text">03</span>
-                        </div>
-                        <h3><a href="service-details-13.html">Retirement Plan <br>Consulting</a></h3>
-                        <div class="link"><a href="service-details-13.html"><span>Explore Service</span></a></div>
-                        <p>Obligations of business it will occur that pleasures have to repudiaters and annoyances accepted.
-                        </p>
-                    </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -215,8 +141,8 @@
                 <div class="row clearfix">
                     <div class="col-lg-8 col-md-12 col-sm-12 content-column">
                         <div class="content-box">
-                            <figure class="image-box"><img src="{{ asset('assets/img/growth-1_1.png') }}"
-                                    alt=""></figure>
+                            <figure class="image-box"><img src="{{ asset('assets/img/growth-1_1.png') }}" alt="">
+                            </figure>
                             <div class="sec-title light">
                                 <span class="sub-title">Our Growth</span>
                                 <h2>Thinking <br>Beyond Ordinary <br>Strategies</h2>
@@ -284,8 +210,8 @@
                     </li>
                 </ul>
                 <!-- <div class="more-text centred">
-                        <h5>2.6k Companies &amp; Individuals Trusted  Us. <a href="index_1.html"><i class="flaticon-right-chevron"></i>View All Clients</a></h5>
-                    </div> -->
+                                    <h5>2.6k Companies &amp; Individuals Trusted  Us. <a href="index_1.html"><i class="flaticon-right-chevron"></i>View All Clients</a></h5>
+                                </div> -->
             </div>
         </div>
     </section>
@@ -294,102 +220,102 @@
 
     <!-- chooseus-section -->
     <!-- <section class="chooseus-section sec-pad">
-            <span class="big-text">Why <br>Choose Us</span>
-            <div class="auto-container">
-                <div class="sec-title centred">
-                    <span class="sub-title">Why Coose Us</span>
-                    <h2>Reason for Choosee Counsolve</h2>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12 left-column">
-                        <div class="inner-content">
-                            <div class="chooseus-block-one">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="flaticon-knowledge"></i></div>
-                                    <div class="static-content">
-                                        <h3>Extensive Knowledge</h3>
-                                        <p>Foresee the pain trouble all that rationally encounter</p>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <p>Foresee the pain trouble all that rationally encounter to the claims of the obligations of business it will frequently occur.</p>
+                        <span class="big-text">Why <br>Choose Us</span>
+                        <div class="auto-container">
+                            <div class="sec-title centred">
+                                <span class="sub-title">Why Coose Us</span>
+                                <h2>Reason for Choosee Counsolve</h2>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 col-md-6 col-sm-12 left-column">
+                                    <div class="inner-content">
+                                        <div class="chooseus-block-one">
+                                            <div class="inner-box">
+                                                <div class="icon-box"><i class="flaticon-knowledge"></i></div>
+                                                <div class="static-content">
+                                                    <h3>Extensive Knowledge</h3>
+                                                    <p>Foresee the pain trouble all that rationally encounter</p>
+                                                </div>
+                                                <div class="overlay-content">
+                                                    <p>Foresee the pain trouble all that rationally encounter to the claims of the obligations of business it will frequently occur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chooseus-block-one">
+                                            <div class="inner-box">
+                                                <div class="icon-box"><i class="flaticon-united"></i></div>
+                                                <div class="static-content">
+                                                    <h3>Team Approach</h3>
+                                                    <p>How all this mistaken idea any denouncing pleasure</p>
+                                                </div>
+                                                <div class="overlay-content">
+                                                    <p>How all this mistaken idea any denouncing pleasure to the claims of the obligations of business it will frequently occur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chooseus-block-one">
+                                            <div class="inner-box">
+                                                <div class="icon-box"><i class="flaticon-clock"></i></div>
+                                                <div class="static-content">
+                                                    <h3>Time Savings</h3>
+                                                    <p>Actual teachings of the great it explorer of the truth</p>
+                                                </div>
+                                                <div class="overlay-content">
+                                                    <p>Actual teachings of the great it explorer of the truth to the claims of the obligations of business it will frequently occur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="chooseus-block-one">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="flaticon-united"></i></div>
-                                    <div class="static-content">
-                                        <h3>Team Approach</h3>
-                                        <p>How all this mistaken idea any denouncing pleasure</p>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <p>How all this mistaken idea any denouncing pleasure to the claims of the obligations of business it will frequently occur.</p>
+                                <div class="col-lg-4 col-md-6 col-sm-12 image-column">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="{{ asset('assets/img/chooseus-1.jpg') }}" alt=""></figure>
+                                        <div class="image-shape"><img src="{{ asset('assets/img/shape-8.png') }}" alt=""></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="chooseus-block-one">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="flaticon-clock"></i></div>
-                                    <div class="static-content">
-                                        <h3>Time Savings</h3>
-                                        <p>Actual teachings of the great it explorer of the truth</p>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <p>Actual teachings of the great it explorer of the truth to the claims of the obligations of business it will frequently occur.</p>
+                                <div class="col-lg-4 col-md-6 col-sm-12 right-column">
+                                    <div class="inner-content">
+                                        <div class="chooseus-block-one">
+                                            <div class="inner-box">
+                                                <div class="icon-box"><i class="flaticon-risk-management"></i></div>
+                                                <div class="static-content">
+                                                    <h3>Risk Management</h3>
+                                                    <p>One rejects, dislikes, or avoids pleasure all itself</p>
+                                                </div>
+                                                <div class="overlay-content">
+                                                    <p>One rejects, dislikes, or avoids pleasure all itself to the claims of the obligations of business it will frequently occur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chooseus-block-one">
+                                            <div class="inner-box">
+                                                <div class="icon-box"><i class="flaticon-monitor"></i></div>
+                                                <div class="static-content">
+                                                    <h3>Advanced Tech</h3>
+                                                    <p>Rationally encounter that are consequences extremely</p>
+                                                </div>
+                                                <div class="overlay-content">
+                                                    <p>Rationally encounter that are consequences extremely to the claims of the obligations of business it will frequently occur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chooseus-block-one">
+                                            <div class="inner-box">
+                                                <div class="icon-box"><i class="flaticon-advice"></i></div>
+                                                <div class="static-content">
+                                                    <h3>Customized Advice</h3>
+                                                    <p>How all this mistaken idea of denouncing pleasure</p>
+                                                </div>
+                                                <div class="overlay-content">
+                                                    <p>How all this mistaken idea of denouncing pleasure to the claims of the obligations of business it will frequently occur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 image-column">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ asset('assets/img/chooseus-1.jpg') }}" alt=""></figure>
-                            <div class="image-shape"><img src="{{ asset('assets/img/shape-8.png') }}" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 right-column">
-                        <div class="inner-content">
-                            <div class="chooseus-block-one">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="flaticon-risk-management"></i></div>
-                                    <div class="static-content">
-                                        <h3>Risk Management</h3>
-                                        <p>One rejects, dislikes, or avoids pleasure all itself</p>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <p>One rejects, dislikes, or avoids pleasure all itself to the claims of the obligations of business it will frequently occur.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chooseus-block-one">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="flaticon-monitor"></i></div>
-                                    <div class="static-content">
-                                        <h3>Advanced Tech</h3>
-                                        <p>Rationally encounter that are consequences extremely</p>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <p>Rationally encounter that are consequences extremely to the claims of the obligations of business it will frequently occur.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chooseus-block-one">
-                                <div class="inner-box">
-                                    <div class="icon-box"><i class="flaticon-advice"></i></div>
-                                    <div class="static-content">
-                                        <h3>Customized Advice</h3>
-                                        <p>How all this mistaken idea of denouncing pleasure</p>
-                                    </div>
-                                    <div class="overlay-content">
-                                        <p>How all this mistaken idea of denouncing pleasure to the claims of the obligations of business it will frequently occur.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+                    </section> -->
     <!-- chooseus-section end -->
 
 
@@ -457,8 +383,8 @@
                 </div>
             </div>
             <!-- <div class="more-text centred">
-                    <h5>Start Investing with Smart Ideas. <a href="index_1.html"><i class="flaticon-right-chevron"></i>Appointment</a></h5>
-                </div> -->
+                                <h5>Start Investing with Smart Ideas. <a href="index_1.html"><i class="flaticon-right-chevron"></i>Appointment</a></h5>
+                            </div> -->
         </div>
     </section>
     <!-- working-section end -->
@@ -1524,8 +1450,8 @@
                                 <div class="four-item-carousel owl-carousel owl-theme">
                                     <div class="project-block-one">
                                         <div class="inner-box">
-                                            <figure class="image-box"><img
-                                                    src="{{ asset('assets/img/project-1.jpg') }}" alt="">
+                                            <figure class="image-box"><img src="{{ asset('assets/img/project-1.jpg') }}"
+                                                    alt="">
                                             </figure>
                                             <div class="content-inner">
                                                 <div class="text-box">
@@ -1542,8 +1468,8 @@
                                     </div>
                                     <div class="project-block-one">
                                         <div class="inner-box">
-                                            <figure class="image-box"><img
-                                                    src="{{ asset('assets/img/project-2.jpg') }}" alt="">
+                                            <figure class="image-box"><img src="{{ asset('assets/img/project-2.jpg') }}"
+                                                    alt="">
                                             </figure>
                                             <div class="content-inner">
                                                 <div class="text-box">
@@ -1560,8 +1486,8 @@
                                     </div>
                                     <div class="project-block-one">
                                         <div class="inner-box">
-                                            <figure class="image-box"><img
-                                                    src="{{ asset('assets/img/project-3.jpg') }}" alt="">
+                                            <figure class="image-box"><img src="{{ asset('assets/img/project-3.jpg') }}"
+                                                    alt="">
                                             </figure>
                                             <div class="content-inner">
                                                 <div class="text-box">
@@ -1578,8 +1504,8 @@
                                     </div>
                                     <div class="project-block-one">
                                         <div class="inner-box">
-                                            <figure class="image-box"><img
-                                                    src="{{ asset('assets/img/project-4.jpg') }}" alt="">
+                                            <figure class="image-box"><img src="{{ asset('assets/img/project-4.jpg') }}"
+                                                    alt="">
                                             </figure>
                                             <div class="content-inner">
                                                 <div class="text-box">
@@ -1596,8 +1522,8 @@
                                     </div>
                                     <div class="project-block-one">
                                         <div class="inner-box">
-                                            <figure class="image-box"><img
-                                                    src="{{ asset('assets/img/project-1.jpg') }}" alt="">
+                                            <figure class="image-box"><img src="{{ asset('assets/img/project-1.jpg') }}"
+                                                    alt="">
                                             </figure>
                                             <div class="content-inner">
                                                 <div class="text-box">
@@ -1614,8 +1540,8 @@
                                     </div>
                                     <div class="project-block-one">
                                         <div class="inner-box">
-                                            <figure class="image-box"><img
-                                                    src="{{ asset('assets/img/project-2.jpg') }}" alt="">
+                                            <figure class="image-box"><img src="{{ asset('assets/img/project-2.jpg') }}"
+                                                    alt="">
                                             </figure>
                                             <div class="content-inner">
                                                 <div class="text-box">
@@ -1632,8 +1558,8 @@
                                     </div>
                                     <div class="project-block-one">
                                         <div class="inner-box">
-                                            <figure class="image-box"><img
-                                                    src="{{ asset('assets/img/project-3.jpg') }}" alt="">
+                                            <figure class="image-box"><img src="{{ asset('assets/img/project-3.jpg') }}"
+                                                    alt="">
                                             </figure>
                                             <div class="content-inner">
                                                 <div class="text-box">
@@ -2724,15 +2650,15 @@
                             <h2>Que disent nos clients de nous ?</h2>
                         </div>
                         <!-- <div class="inner-box">
-                                <div class="single-item">
-                                    <div class="icon-box"><img src="{{ asset('assets/img/icon-7.png') }}" alt=""></div>
-                                    <h5>Avg.Rating 4.8/5 <br>Based on 2,500 Client Reviews</h5>
-                                </div>
-                                <div class="tag">Excellent Service</div>
-                            </div>
-                            <div class="link">
-                                <a href="index_1.html"><span>Read All Reviews</span></a>
-                            </div> -->
+                                            <div class="single-item">
+                                                <div class="icon-box"><img src="{{ asset('assets/img/icon-7.png') }}" alt=""></div>
+                                                <h5>Avg.Rating 4.8/5 <br>Based on 2,500 Client Reviews</h5>
+                                            </div>
+                                            <div class="tag">Excellent Service</div>
+                                        </div>
+                                        <div class="link">
+                                            <a href="index_1.html"><span>Read All Reviews</span></a>
+                                        </div> -->
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 inner-column">
@@ -2740,20 +2666,20 @@
                         <div class="testimonial-slider">
                             <div class="bxslider">
                                 <div class="slider-content">
-                                        <div class="testimonial-block-one">
-                                            <figure class="thumb-box"><img
-                                                    src="{{ asset('assets/img/testimonial-1.png') }}" alt="">
-                                            </figure>
-                                            <div class="inner-box">
-                                                <div class="icon-box"><i class="flaticon-quote"></i></div>
-                                                <h4>Great Experience!</h4>
-                                                <p>I have been financially advised by counsolve investment Planners since
-                                                    2022 I have had a very good experience. The sound financial advice they
-                                                    gave me helped me to achieve.</p>
-                                                <h3>Nathan Felix</h3>
-                                                <span class="designation">Director - Naxly Info tech</span>
-                                            </div>
+                                    <div class="testimonial-block-one">
+                                        <figure class="thumb-box"><img
+                                                src="{{ asset('assets/img/testimonial-1.png') }}" alt="">
+                                        </figure>
+                                        <div class="inner-box">
+                                            <div class="icon-box"><i class="flaticon-quote"></i></div>
+                                            <h4>Great Experience!</h4>
+                                            <p>I have been financially advised by counsolve investment Planners since
+                                                2022 I have had a very good experience. The sound financial advice they
+                                                gave me helped me to achieve.</p>
+                                            <h3>Nathan Felix</h3>
+                                            <span class="designation">Director - Naxly Info tech</span>
                                         </div>
+                                    </div>
                                 </div>
 
                                 {{-- <div class="slider-content">
