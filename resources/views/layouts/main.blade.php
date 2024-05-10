@@ -20,23 +20,24 @@
         rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link href="{{asset('assets/css/font-awesome-all.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/flaticon.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/owl.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/jquery.fancybox.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/animate.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/nice-select.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/color.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/responsive.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/jquery.fancybox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/color.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
 
-    <link href="{{asset('assets/css/custom.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets/css/custom.css') }}" rel="stylesheet">
 
 </head>
 
 
 <!-- page wrapper -->
+
 <body>
 
     <div class="boxed_wrapper">
@@ -106,7 +107,7 @@
                                 y
                             </span>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,7 +118,8 @@
         <div id="search-popup" class="search-popup">
             <div class="popup-inner">
                 <div class="upper-box clearfix">
-                    <figure class="logo-box pull-left"><a href="index_1.html"><img src="{{asset('assets/img/logo.png')}}" alt=""></a></figure>
+                    <figure class="logo-box pull-left"><a href="index_1.html"><img
+                                src="{{ asset('assets/img/logo.png') }}" alt=""></a></figure>
                     <div class="close-search pull-right"><i class="fa-solid fa-xmark"></i></div>
                 </div>
                 <div class="overlay-layer"></div>
@@ -126,7 +128,8 @@
                         <form method="post" action="index.html">
                             <div class="form-group">
                                 <fieldset>
-                                    <input type="search" class="form-control" name="search-input" value="" placeholder="Type your keyword and hit" required="">
+                                    <input type="search" class="form-control" name="search-input" value=""
+                                        placeholder="Type your keyword and hit" required="">
                                     <button type="submit"><i class="flaticon-loupe"></i></button>
                                 </fieldset>
                             </div>
@@ -153,11 +156,14 @@
                         <div class="sidebar-info-contents">
                             <div class="content-inner">
                                 <div class="logo">
-                                    <a href="index.html"><img src="{{asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png')}}" alt=""></a>
+                                    <a href="index.html"><img
+                                            src="{{ asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png') }}"
+                                            alt=""></a>
                                 </div>
                                 <div class="content-box">
                                     <h4>A PROPOS</h4>
-                                    <p>Créateur de compétences, d’innovation et d’opportunités. Nous vous accompagnons dans votre développement stratégique au quotidien.</p>
+                                    <p>Créateur de compétences, d’innovation et d’opportunités. Nous vous accompagnons
+                                        dans votre développement stratégique au quotidien.</p>
                                     <br>
                                     <a href="a-propos.html" class="theme-btn btn-two">Lire plus</a>
                                 </div>
@@ -166,7 +172,8 @@
                                     <ul>
                                         <li>Abidjan - Cocody Angré 8eme Tranche <br>(Carrefour prière)</li>
                                         <li><a href="tel:+2250709095378">+225 0709095378</a></li>
-                                        <li><a href="mailto:infos@jmkconsulting-ci.com">infos@jmkconsulting-ci.com</a></li>
+                                        <li><a href="mailto:infos@jmkconsulting-ci.com">infos@jmkconsulting-ci.com</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <ul class="social-box clearfix">
@@ -191,7 +198,7 @@
                 <div class="outer-container">
                     <ul class="info-list clearfix">
                         <li><span class="ttm-textcolor-skincolor" style="color: white;"><i class="fa fa-map"></i>
-                            Abidjan - Cocody Angré 8eme Tranche (Carrefour prière)</span></li>
+                                Abidjan - Cocody Angré 8eme Tranche (Carrefour prière)</span></li>
                         <!-- <li><a href="contacts.html">Contacts</a></li> -->
                     </ul>
                     <ul class="social-links clearfix">
@@ -209,9 +216,11 @@
             <div class="header-upper">
                 <div class="outer-container">
                     <div class="left-column">
-                        <figure class="logo-box"><a href="*/"><img src="{{asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png')}}" alt=""></a></figure>
+                        <figure class="logo-box"><a href="*/"><img
+                                    src="{{ asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png') }}"
+                                    alt=""></a></figure>
                         <div class="award-box">
-                            <!-- <div class="award-image"><img src="{{asset('assets/img/award-1.png')}}" alt=""></div> -->
+                            <!-- <div class="award-image"><img src="{{ asset('assets/img/award-1.png') }}" alt=""></div> -->
                             <!-- <h5>Leading providers of investment <br>advisory solutions.</h5> -->
                         </div>
                     </div>
@@ -220,8 +229,11 @@
                             <div class="icon-box"><i class="flaticon-headphone"></i></div>
                             <!-- <h5><a href="faq.html">FAQ</a></h5> -->
                         </div>
-                        <div class="phone"><h3><a href="tel:+2250709095378">+225 0709095378</a></h3></div>
-                        <div class="btn-box"><a href="contact.html" class="theme-btn btn-one">Contactez-nous</a></div>
+                        <div class="phone">
+                            <h3><a href="tel:+2250709095378">+225 0709095378</a></h3>
+                        </div>
+                        <div class="btn-box"><a href="contact.html" class="theme-btn btn-one">Contactez-nous</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,9 +249,10 @@
                                 <i class="icon-bar"></i>
                             </div>
                             <nav class="main-menu navbar-expand-md navbar-light">
-                                
-                                <div class="collapse navbar-collapse show clearfix" style="display: flex!important; flex-direction: row;" id="navbarSupportedContent">
-                                    
+
+                                <div class="collapse navbar-collapse show clearfix"
+                                    style="display: flex!important; flex-direction: row;" id="navbarSupportedContent">
+
                                     <ul class="navigation clearfix">
                                         <li class="current"><a href="index.html">Accueil</a>
                                         </li>
@@ -252,25 +265,36 @@
                                         </li>
                                         <li class="dropdown"><a href="#">Services</a>
                                             <ul>
-                                                <li><a href="services-detail-agriculture.html">Négoce de matière première</a></li>
+                                                <li><a href="services-detail-agriculture.html">Négoce de matière
+                                                        première</a></li>
                                                 <li class="dropdown"><a href="#">Environnement & foresterie</a>
                                                     <ul>
-                                                        <li><a href="changement_climatique.html">Changement climatique & biodiversité</a>
+                                                        <li><a href="changement_climatique.html">Changement climatique
+                                                                & biodiversité</a>
                                                         </li>
-                                                        <li><a href="amenagement_forestier.html">Aménagement forestier & du territoire</a>
+                                                        <li><a href="amenagement_forestier.html">Aménagement forestier
+                                                                & du territoire</a>
                                                         </li>
                                                         <li><a href="ecosysteme.html">Gestion des écosystèmes</a></li>
-                                                        <li><a href="agroforesterie.html">Agroforesterie & Agroécologie</a></li>
-                                                        <li><a href="audit_environnement.html">Diagnostics & audits</a></li>
-                                                        <li><a href="monitoring_environnement.html">Monitoring environnementaux</a>
+                                                        <li><a href="agroforesterie.html">Agroforesterie &
+                                                                Agroécologie</a></li>
+                                                        <li><a href="audit_environnement.html">Diagnostics & audits</a>
+                                                        </li>
+                                                        <li><a href="monitoring_environnement.html">Monitoring
+                                                                environnementaux</a>
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="services-detail-agriculture.html">Agriculture Intelligente & Innovante</a></li>
-                                                <li><a href="services-detail-entreprise.html">Developpement des entreprises</a></li>
-                                                <li><a href="services-detail-gestion_projet.html">Étude et gestion de projets</a></li>
-                                                <li><a href="service-detail-btp.html">Bâtiment et Travaux Publics</a></li>
-                                                <li><a href="service-detail-incubation.html">Incubation des organisations agricole</a></li>
+                                                <li><a href="services-detail-agriculture.html">Agriculture Intelligente
+                                                        & Innovante</a></li>
+                                                <li><a href="services-detail-entreprise.html">Developpement des
+                                                        entreprises</a></li>
+                                                <li><a href="services-detail-gestion_projet.html">Étude et gestion de
+                                                        projets</a></li>
+                                                <li><a href="service-detail-btp.html">Bâtiment et Travaux Publics</a>
+                                                </li>
+                                                <li><a href="service-detail-incubation.html">Incubation des
+                                                        organisations agricole</a></li>
                                                 <li><a href="service-detail-import.html">Import et export</a></li>
                                             </ul>
                                         </li>
@@ -289,11 +313,11 @@
                         <div class="menu-right-content">
                             <div class="search-box">
                                 <div class="search-box-outer search-toggler" style="padding-left: 20px;">
-                                    &nbsp;<img src="{{asset('assets/img/icon-2.png')}}" alt="">
+                                    &nbsp;<img src="{{ asset('assets/img/icon-2.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="language-box" style="padding-left: 30px;">
-                                <h5><img src="{{asset('assets/img/icon-3.png')}}" alt=""></h5>
+                                <h5><img src="{{ asset('assets/img/icon-3.png') }}" alt=""></h5>
                                 <div class="select-box">
                                     <select class="selectmenu">
                                         <option>Fr</option>
@@ -302,7 +326,7 @@
                                 </div>
                             </div>
                             <div class="nav-btn nav-toggler navSidebar-button clearfix">
-                                <img src="{{asset('assets/img/icon-4.png')}}" alt="">
+                                <img src="{{ asset('assets/img/icon-4.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -321,11 +345,11 @@
                         <div class="menu-right-content">
                             <div class="search-box">
                                 <div class="search-box-outer search-toggler" style="padding-left: 20px;">
-                                    &nbsp;<img src="{{asset('assets/img/icon-2.png')}}" alt="">
+                                    &nbsp;<img src="{{ asset('assets/img/icon-2.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="language-box" style="padding-left: 30px;">
-                                <h5><img src="{{asset('assets/img/icon-3.png')}}" alt=""></h5>
+                                <h5><img src="{{ asset('assets/img/icon-3.png') }}" alt=""></h5>
                                 <div class="select-box">
                                     <select class="selectmenu">
                                         <option>Fr</option>
@@ -334,7 +358,7 @@
                                 </div>
                             </div>
                             <div class="nav-btn nav-toggler navSidebar-button clearfix">
-                                <img src="{{asset('assets/img/icon-4.png')}}" alt="">
+                                <img src="{{ asset('assets/img/icon-4.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -349,8 +373,11 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
 
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="{{asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png')}}" alt="" title=""></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                <div class="nav-logo"><a href="index.html"><img
+                            src="{{ asset('assets/img/jmkfile/accueil/logo-jmk1.fw.png') }}" alt=""
+                            title=""></a></div>
+                <div class="menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>
                 <div class="contact-info">
                     <h4>Contacts</h4>
@@ -373,22 +400,28 @@
 
 
         <!-- banner-section -->
+        @php
+            $sliders = DB::table('sliders')->orderBy('created_at', 'desc')->take(3)->get();
+        @endphp
         <section class="banner-section">
             <div class="banner-carousel owl-theme owl-carousel">
-                <div class="slide-item">
-                    <div class="image-layer" style="background-image:url({{asset('assets/img/banner-1.jpg')}})"></div>
-                    <div class="auto-container">
-                        <div class="content-box">
-                            <h2>Showing <span>You the way</span> of Success</h2>
-                            <div class="lower-box">
-                                <div class="icon-box"><i class="flaticon-conversation"></i></div>
-                                <div class="text">The moment, so blinded by desire, that they cannot foresee and trouble that are bound to ensue.</div>
-                                <a href="index_1.html" class="theme-btn btn-two">Services &amp; Plan</a>
+                @foreach ($sliders as $slider)
+                    <div class="slide-item">
+                        <div class="image-layer"
+                            style="background-image:url({{ $slider->thumb_url }})"></div>
+                        <div class="auto-container">
+                            <div class="content-box">
+                                <h2>{{$slider->titre}}<span>{{$slider->titre2}}</span>{{$slider->titre3}}</h2>
+                                <div class="lower-box">
+                                    <div class="icon-box"><i class="flaticon-conversation"></i></div>
+                                    <div class="text">{{$slider->contenu}}</div>
+                                    <a href="#" class="theme-btn btn-two">Services &amp; Plan</a>
+                                </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
-                </div>
-                <div class="slide-item">
+                @endforeach
+                {{-- <div class="slide-item">
                     <div class="image-layer" style="background-image:url({{asset('assets/img/banner-2.jpg')}})"></div>
                     <div class="auto-container">
                         <div class="content-box">
@@ -413,7 +446,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </section>
         <!-- banner-section end -->
@@ -442,24 +475,24 @@
 
 
     <!-- jequery plugins -->
-    <script src="{{asset('assets/js/jquery.js')}}"></script>
-    <script src="{{asset('assets/js/popper.min.js')}}"></script>
-    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('assets/js/owl.js')}}"></script>
-    <script src="{{asset('assets/js/wow.js')}}"></script>
-    <script src="{{asset('assets/js/validation.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.fancybox.js')}}"></script>
-    <script src="{{asset('assets/js/appear.js')}}"></script>
-    <script src="{{asset('assets/js/scrollbar.js')}}"></script>
-    <script src="{{asset('assets/js/isotope.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.nice-select.min.js')}}"></script>
-    <script src="{{asset('assets/js/nav-tool.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.lettering.min.js')}}"></script>
-    <script src="{{asset('assets/js/jquery.circleType.js')}}"></script>
-    <script src="{{asset('assets/js/bxslider.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery.js') }}"></script>
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/owl.js') }}"></script>
+    <script src="{{ asset('assets/js/wow.js') }}"></script>
+    <script src="{{ asset('assets/js/validation.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.fancybox.js') }}"></script>
+    <script src="{{ asset('assets/js/appear.js') }}"></script>
+    <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
+    <script src="{{ asset('assets/js/isotope.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ asset('assets/js/nav-tool.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.lettering.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.circleType.js') }}"></script>
+    <script src="{{ asset('assets/js/bxslider.js') }}"></script>
 
     <!-- main-js -->
-    <script src="{{asset('assets/js/script.js')}}"></script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
 
 
 
